@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>vedioPlayer</title>
+	<link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/player.css">
+</head>
+<body>
+    <div id="player">
+    	<video id="video" poster="poster.jpg">
+    		<source src="./video/saySomething.mp4" type="video/mp4">
+    	</video>
+    	<div id="slider-box">
+    		<div id="slider-progress"></div>
+    		<div id="thumb"></div>
+    		<div id="slider-runWay"></div>
+    	</div>
+    	<div id="other-control">
+    		<div id="control" class="fa fa-play"></div>
+    	    <div id="DoubleSpeed" class="fa fa-forward"></div>
+    	    <div id="sound-control">
+    	    	<div id="sound" class="fa fa-volume-up"></div>
+    	    	<div id="sound-box">
+    	    		<div id="sound-progress"></div>
+    	    		<div id="sound-thumb"></div>
+    	    		<div id="sound-runWay"></div>
+    	    	</div>
+    	    </div>
+    	    <div id="fullPage" class="fa fa-expand"></div>
+    	</div>
+    </div>
+    <script type="text/javascript" src="./js/videoPlayer.js"></script>
+</body>
+</html>

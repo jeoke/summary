@@ -1,0 +1,138 @@
+html,
+body {
+	display: relative;
+	padding: 0;
+	margin: 0;
+}
+
+#player {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 800px;
+	height: 450px;
+	transform: translate(-50%, -50%);
+	user-select: none;
+}
+
+#player .video {
+	width: 100%;
+	height: 100%;
+}
+
+.slider {
+	width: 100%;
+	height: 4px;
+	background: rgba(255, 255, 255, .3);
+	cursor: pointer;
+}
+
+.slider .slider-progress,
+.slider .slider-progress .slider-buffer {
+	height: 100%;
+	width: 0;
+}
+
+.slider .slider-progress {
+	background: #B82525;
+	transition: .2s;
+}
+
+.slider .slider-runway {
+	position: absolute;
+	top: -6px;
+	width: 16px;
+	height: 16px;
+	transform: translateX(-2px);
+	cursor: pointer;
+	z-index: 2;
+	transition: .2s;
+}
+
+.slider .slider-runway .thumb {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 14px;
+	height: 14px;
+	margin: -7px 0 0 -7px;
+	border-radius: 50%;
+	border: 4px solid #fff;
+	box-sizing: border-box;
+	background: #B82525;
+}
+
+#player .player-controller {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	font-size: 13px;
+	color: #fff;
+	z-index: 1;
+}
+
+.player-controller .progress {
+	width: 100%;
+}
+
+.player-controller .control {
+	display: flex;
+	justify-content: space-between;
+	padding: 8px 0;
+}
+
+.control .controller,
+.control .volume {
+	display: flex;
+	padding: 0 15px;
+}
+
+.controller__state-left {
+	width: 2.5em;
+	font-size: 20px;
+	text-align: center;
+}
+
+.controller__state-right {
+	display: flex;
+	align-items: center;
+	line-height: 16px;
+}
+
+.controller__state-right .sepertor {
+	padding: 0 3px;
+}
+
+.controller__state-right .current {
+	display: inline-block;
+	width: 2.6em;
+}
+
+
+.volume {
+	display: flex;
+	align-items: center;
+	font-size: 2em;
+	cursor: pointer;
+}
+
+.volume .slider {
+	position: relative;
+	width: 3em;
+	margin-left: 10px;
+	border-radius: 2px;
+}
+
+.volume .slider .slider-runway {
+	width: 12px;
+	height: 12px;
+	top: -2px;
+	transform: translateX(-50%);
+}
+
+.volume .slider .thumb {
+	width: 10px;
+	height: 10px;
+	border-width: 3px;
+}

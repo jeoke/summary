@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>vue响应式原理</title>
+</head>
+<body>
+<input type="text" id="in"/>
+输入的值为 <span id="out"></span>
+<div id="app">
+	<h2>{{title}}</h2>
+	<input v-model='name'>
+	<h1>{{name}}</h1>
+	<button v-on:click='clickMe'>click me!</button>
+</div>
+</body>
+<script type="text/javascript" src="./js/vue.js"></script>
+</html>

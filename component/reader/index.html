@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+	<title>readerDevelopment</title>
+	<link rel="stylesheet" type="text/css" href="./css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/reader.css">
+</head>
+<body>
+	
+	<form name="form1" id="form1" method="post" action="#">
+		<input type="file" name="file1" id="file1" />
+	</form>
+	<div class="book">
+	<div class="title-wrapper">
+         <div class="left">
+         	<div class="fa fa-chevron-left"></div>
+         </div>
+         <div class="right">
+         	<div class="fa fa-heart-o""></div>
+         	<div class="fa fa-github""></div>
+         	<div class="fa fa-list""></div>
+         </div>
+	</div>
+	<div class="read-wrapper">
+    <div id="read">
+    	<div class="mask">
+    		<div class="left"></div>
+    		<div class="middle"></div>
+    		<div class="right"></div>
+    	</div>
+    </div>
+    </div>    
+    <div class="setting catalog">
+    	
+    </div>
+    <div id="settingArea">
+
+    <div class="setting progress">
+    	<div id="read-progress"></div>
+    	<div id="read-thumb"></div>
+    	<div id="read-runway"></div>
+    </div>
+    <div class="setting theme">
+    	<div class="fa fa-low-vision" id="night"></div>
+    	<div class="fa fa-certificate" id="sun"></div>
+    </div>
+    <div class="setting font">
+    	<div id="font-increate">A+</div>
+    	<div id="font-normal">
+    		<div id="font-progress"></div>
+    	    <div id="font-thumb"></div>
+    	    <div id="font-runway"></div>
+    	</div>
+    	<div id="font-decreate">A-</div>
+    </div>
+    <div class="menu-wrapper">
+    	<div class="fa fa-align-justify" id="catalog"></div>
+    	<div class="fa fa-spinner" id="progress"></div>
+    	<div class="fa fa-th" id="theme"></div>
+    	<div class="fa fa-font" id="font"></div>
+    </div>
+    </div>
+    </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.5/jszip.min.js"></script>
+    <script src="./js/epub.min.js"></script>
+    <script type="text/javascript" src="./js/reader.js"></script>
+</html>

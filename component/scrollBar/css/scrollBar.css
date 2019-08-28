@@ -1,0 +1,28 @@
+body{
+	overflow: hidden;
+}
+.scrollBar{
+    position: absolute;
+    width: 1vw;
+    right: 0;
+    cursor: pointer;
+    background-color: bisque;
+    border-radius: 5px;
+    z-index:1;
+}
+#modules{
+	position: absolute;
+	width: 100vw;
+	top: 0;
+	overflow: hidden;
+}
+#modules div{
+	width: 97vw;
+	height: 200px;
+	background-color: #ccc;
+}
+#wrapper{
+	z-index: 0;
+	width: 100vw;
+	height: 100vh;
+}

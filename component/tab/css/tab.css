@@ -1,0 +1,51 @@
+#tab{
+	position: relative;
+	width: 570px;
+	height: 80px;
+}
+#tab div{
+	position: absolute;
+	top: 26px;
+	left: 0px;
+	width: 564px;
+	border: 1px solid #D4D3D3;
+	border-width: 0 1px 1px; 
+}
+#tab div{
+	display: none;
+}
+#tab .block{
+	display: block;
+	padding-bottom: 10px;
+}
+#tab h3{
+	float: left;
+	width: 114px;
+	height: 25px;
+	margin: 0px -1px 0px 0px;
+	line-height: 26px;
+	font-size: 14px;
+	font-weight: normal;
+	text-align: center;
+	color: #00007F;
+	cursor: pointer;
+}
+#tab .up{
+	background-color: #ddd;
+}
+
+#tab ul{
+	margin: 15px 0px 0px;
+	padding: 0;
+	list-style: none;
+}
+
+#tab li{
+	display: inline;
+	float: left;
+	width: 47.9%;
+	height: 22px;
+	line-height: 22px;
+	text-indent: 10px;
+	border: 1px dashed #DEDEDE;
+}

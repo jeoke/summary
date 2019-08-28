@@ -1,0 +1,14 @@
+.kk{
+	background: #ccc;
+}
+.aa p{
+	display: block;
+	position: absolute;
+    top: 50%;
+    width: 100px;
+    left: 50%;
+    margin-left: -50px;
+    margin-top: 20px;
+}
+
+
